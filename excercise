@@ -1,0 +1,38 @@
+import java.util.*;
+public class Bloque1 {
+//En el bloque uno he elegido el ejercicio 2
+    public static void main(String[] args) {
+        int numero;//guardara e ultimo numero introducido
+        int cont1;//contara los valores erroneos
+        int suma=0;//almacenara la suma de los valores impares <100
+        //las variables
+        for(cont1=0;cont1<5;){
+            //bucle que pide valores hasta que se metan 5 valores erroneos
+            System.out.println();//salto de linea
+            Scanner num=new Scanner(System.in);
+            System.out.println("Introduce un número par menor que 100:");
+            numero=num.nextInt();
+            //Introduce los valores numericos
+            
+            if(numero%2!=0||numero>100){
+                System.out.print("Error. ");
+                cont1++;
+                    //condicional que comprueba si el valor es incorrecto y en caso de serlo muestra el mensaje de error
+                    //y añade uno al numero de valores erroneos introducidos
+                if(numero<100){
+                    suma=suma+numero;
+                    /*condicional que comprueba que el numero sea menor de 100
+                    (al estar dentro del otro condicional ya se sabe que son impares)
+                    y en caso de serlo lo añade al la suma de numeros impares menores de 100*/
+                }
+            }
+            
+        }
+        
+        System.out.println("Fin del programa.");
+        
+        System.out.println("La suma de los números impares menores de 100 introducidos es: "+suma);
+        
+    }
+    
+}
