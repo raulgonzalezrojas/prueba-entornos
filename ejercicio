@@ -1,6 +1,6 @@
 import java.util.*;
 public class Bloque1 {
-//este comentario es de sandra
+//este comentario es de sandra!!!
 //En el bloque uno he elegido el ejercicio 2
     public static void main(String[] args) {
         int numero;//guardara e ultimo numero introducido
