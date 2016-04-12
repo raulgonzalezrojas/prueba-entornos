@@ -1,0 +1,107 @@
+import java.util.*;
+public class Entornos251 {
+
+    public static void main(String[] args) {
+       
+        if (args.length<1){
+	System.out.println("Te falta un dato por introducir");
+	}
+        
+        int a;
+        int b;
+        int c;
+        int cont=0;
+        int d=0;
+        boolean e=false;
+        Scanner n=new Scanner(System.in);
+        for(;d!=args[0].length();cont++){
+
+			d=cont;
+			e=(args[0].charAt(d)>=48&&args[0].charAt(d)<=57);
+			
+			if (e==false);break;
+
+		}
+        
+        if(e==true){
+        
+        
+        System.out.println("Introduzca un valor");
+        a=n.nextInt();
+        System.out.println("Introduzca otro valor");
+        b=n.nextInt();
+        
+        c=Integer.parseInt(args[0]);
+        
+        if (a>=b&&a>=c){
+            
+                if (a==b&&a==c){
+                    System.out.print("Los tres valores son iguales");
+                }
+                else if (a==c){
+                    System.out.print("Hay dos valores que son iguales y valen:"+a+" y otro mas pequeño que vale:"+b);
+                }
+                else if (a==b){
+                    System.out.print("Hay dos valores que son iguales y valen:"+a+" y otro mas pequeño que vale:"+c);
+                }
+                else{
+                System.out.print("El mayor es:"+a);
+                
+                if (b>c){
+                    System.out.print(","+b+","+c);
+                }
+                else if(b==c){
+                    System.out.print(",y los otros dos valores valen ambos:"+b+" puesto que son iguales ");
+                }
+                else{
+                    System.out.print(","+c+","+b);
+                }
+                }
+             
+        }
+        else if(b>a&&b>=c){
+                if (b==c){
+                    System.out.print("Hay dos valores que son iguales y valen:"+b+" y otro mas pequeño que vale:"+a);
+                }
+                else{
+                System.out.print("El mayor es:"+b);
+                
+                if (a>c){
+                    System.out.print(","+a+","+c);
+                }
+                else if(a==c){
+                    System.out.print(",y los otros dos valores valen ambos:"+a+" puesto que son iguales ");
+                }
+                else{
+                    System.out.print(","+c+","+a);
+                }
+                }
+        }
+        else{
+        if (a==c){
+                    System.out.print("Hay dos valores que son iguales y valen:"+a+" y otro mas pequeño que vale:"+b);
+                }
+                else{
+                System.out.print("El mayor es:"+c);
+                
+                if (a>b){
+                    System.out.print(","+a+","+b);
+                }
+                else if(a==b){
+                    System.out.print(",y los otros dos valores valen ambos:"+a+" puesto que son iguales ");
+                }
+                else{
+                    System.out.print(","+b+","+a);
+                }
+                }
+             
+        }
+        
+        }
+        else{
+            System.out.println("El valor introducido en la arraight no es un entero");
+        }
+        
+    }
+    
+}
