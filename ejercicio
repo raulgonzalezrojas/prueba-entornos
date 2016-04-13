@@ -22,7 +22,7 @@ public class Bloque1 {
                     //y añade uno al numero de valores erroneos introducidos
                 if(numero<100){
                     suma=suma+numero;
-                    /*condicional que comprueba que el numero sea menor de 100
+                   //*condicional que comprueba que el numero sea menor de 100
                     (al estar dentro del otro condicional ya se sabe que son impares)
                     y en caso de serlo lo añade al la suma de numeros impares menores de 100*/
                 }
