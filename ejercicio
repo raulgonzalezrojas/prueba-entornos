@@ -16,7 +16,7 @@ public class Bloque1 {
             //Introduce los valores numericos
             
             if(numero%2!=0||numero>100){
-                System.out.print("Error. ");
+                System.out.print("Error. Hola Raul");
                 cont1++;
                     //condicional que comprueba si el valor es incorrecto y en caso de serlo muestra el mensaje de error
                     //y añade uno al numero de valores erroneos introducidos
